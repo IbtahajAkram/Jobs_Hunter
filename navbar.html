@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        ul {
+            display: flex;
+            align-items: end;
+            list-style: none;
+            gap: 30px;
+            margin-left: 312px;
+            padding: 33px;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: navy;
+            color: white;
+            margin-top: -16px;
+            text-decoration: none;
+        }
+
+        li {
+            cursor: pointer;
+            margin-bottom: 10px;
+            /* Add margin-bottom here */
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Jobs Hunter</li>
+            <a href="/Home" onclick="index()">
+                <li>Home</li>
+            </a>
+            <a href="./index.html#About" onclick="index()">
+                <li>About</li>
+            </a>
+            <li>Contact us</li>
+            <a href="/LatestJobs" onclick="index()">
+                <li>Latest Jobs</li>
+            </a>
+            <li onclick="index()">Post a Job</li>
+            <a style="text-decoration: none; color: white;" href="./index.html#catagories">
+                <li>Categories</li>
+            </a>
+            <li onclick="index()">Search Jobs</li>
+        </ul>
+    </nav>
+
+    <script>
+        function index() {
+            window.top.location.href = "/Home";
+        }
+    </script>
+</body>
+
+</html>
